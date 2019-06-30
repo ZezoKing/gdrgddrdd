@@ -10,4 +10,4 @@ var channel = "594651823873458187";
 
 
 client.login(process.env.BOT_TOKEN);
-© 2019 GitHub, Inc.
+
