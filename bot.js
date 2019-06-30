@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', async() => {
-var server = "573149917103783976"; 
-var channel = "573510193535778816";
+var server = "594651464836710400"; 
+var channel = "594651823873458187";
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('** زيزو رجع **')
-    client.guilds.get(server).channels.get(channel).send('** Zezo Is Back **')
+    client.guilds.get(server).channels.get(channel).send('** London Server   **')
     },305);
 }) 
 
 
 client.login(process.env.BOT_TOKEN);
+© 2019 GitHub, Inc.
