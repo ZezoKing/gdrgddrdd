@@ -1,12 +1,11 @@
-async def on_message(message):
-    if message.content.upper().startswith('-SAY'):
-        if message.author.id == "644071355092041738":
-        userID = message.author.id
-            args = message.content.split(" ")
-            await client.send_message(message.channel, "%s" % (" ".join(args[1:])))
-        else:
-            await client.send_message(message.channel, "You do not have permission")
-
+client.on("message", message => {
+let args = message.content.split(" ").slice(1).join(" ");
+if(message.author.bot || message.channel.type == "DM") return;
+if(message.author.id !== "608511451736571914") return;
+if(message.content.startsWith("#say")) {
+message.channel.send(`${args}`)
+}
+})
 
 client.login(process.env.BOT_TOKEN);
 
